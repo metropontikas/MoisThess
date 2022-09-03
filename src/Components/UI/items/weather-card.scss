@@ -1,0 +1,56 @@
+.current-weather {
+  p {
+    text-transform: capitalize;
+  }
+  &-card {
+    max-width: 50rem;
+    margin: auto;
+    padding: 2rem 3rem;
+    background: lavender;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    &-content {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      h4 {
+        align-self: flex-end;
+        color: #0000007d;
+      }
+    }
+    &-info > * {
+      margin-bottom: 0.5rem;
+    }
+  }
+  &-card > * {
+    margin-bottom: 1rem;
+  }
+  &-info {
+    display: flex;
+  }
+  &-extra {
+    flex-basis: 45%;
+    align-self: center;
+    div {
+      border: none;
+    }
+  }
+  &-details {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-details > * {
+    flex-basis: 45%;
+  }
+}
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: solid 1px #0000004a;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}

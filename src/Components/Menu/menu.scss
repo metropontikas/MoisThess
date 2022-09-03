@@ -6,6 +6,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: 2rem;
+  height: 50px;
+
   &__title {
     font-size: 2rem;
     cursor: pointer;
