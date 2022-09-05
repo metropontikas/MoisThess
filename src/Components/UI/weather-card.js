@@ -46,7 +46,7 @@ const WeatherCard = (props) => {
         </p>
       </div>
       <div className="current-weather-card-header">
-        <h2>{!props.isForecast ? "Current" : ""} Weather</h2>
+        <h2>{!props.isForecast ? "Current" : "Expected"} Weather</h2>
         {!props.isForecast ? time : null}
       </div>
       <div className="current-weather-card-content ">

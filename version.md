@@ -1,3 +1,9 @@
+1.3
+~change title
+~Add conditinal rendering of "current" or "expected" weather in weather-card.js
+~Remove unused dependencies and scripts
+~Update Readme file
+
 1.2
 ~Migrate logic for changing incoming data weather-card to redux
 ~Build menu
