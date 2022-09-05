@@ -10,23 +10,12 @@
   align-items: center;
   top: 15%;
   z-index: 5;
-  font-size: 2.5rem;
   display: flex;
-  color: white;
   ul {
     list-style: none;
   }
   li {
-    &:hover {
-      transform: scale(0.93);
-    }
-  }
-
-  a {
-    &:visited {
-      color: inherit;
-      text-decoration: none;
-    }
+    width: 100%;
   }
 }
 .close {
@@ -34,9 +23,17 @@
   right: 15%;
   bottom: 12%;
   font-size: 3rem;
-  color: white;
   z-index: 5;
   cursor: pointer;
+  background: #400d6f;
+  box-shadow: #38ff00 0px 0px 5px 0px;
+  border-radius: 50%;
+  height: 67px;
+  width: 67px;
+  &:hover {
+    transform: scale(0.93);
+    cursor: pointer;
+  }
 }
 
 .active {

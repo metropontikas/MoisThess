@@ -1,0 +1,23 @@
+.home {
+  &__header {
+    margin: 2rem 0;
+    background-color: #282c34;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__title {
+    font-size: 3rem;
+    margin-top: 0;
+    text-shadow: 0 1px 8px rgba(84, 234, 42, 0.72);
+  }
+  &__subtitle {
+    position: relative;
+    right: -2rem;
+    text-align: right;
+    color: #400d6f;
+    text-shadow: 0 1px 8px #54ea2a;
+  }
+}

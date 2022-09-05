@@ -1,14 +1,8 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-import "./menu.scss";
-import Backdrop from "../UI/Backdrop";
+import Backdrop from "../UI/Modals/Backdrop";
 import MenuContent from "./MenuContent";
-
-/**
- * Header menu function
- *
- * @returns
- */
+import "./menu.scss";
 
 const Menu = () => {
   const [menuIsToggled, setMenuIsToggled] = useState(false);
@@ -20,7 +14,7 @@ const Menu = () => {
   return (
     <div className="menu">
       <div className="menu__title" onClick={toggleHandler}>
-        MENU
+        Forecast
       </div>
       {menuIsToggled && <MenuContent onClick={toggleHandler} />}
       {menuIsToggled && <Backdrop onClick={toggleHandler} />}

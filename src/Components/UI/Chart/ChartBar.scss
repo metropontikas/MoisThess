@@ -1,5 +1,6 @@
 .chart-bar {
   height: 100%;
+  width: 85px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,24 +8,34 @@
 
 .chart-bar__inner {
   height: 100%;
-  width: 100%;
+  width: 3rem;
   border: 1px solid #313131;
-  border-radius: 12px;
-  background-color: #c3b4f3;
+  background-color: #282c34;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  &:hover {
+    cursor: pointer;
+    transition: 0.5s;
+    box-shadow: 0px 0 5px 0px chartreuse;
+  }
 }
 
 .chart-bar__fill {
-  background-color: #4826b9;
+  background-color: #54ea2a;
   width: 100%;
   transition: all 0.3s ease-out;
+  p {
+    color: #400d6f;
+    text-shadow: 0px 0px 8px #400d6f;
+    margin-top: 1rem;
+  }
 }
 
 .chart-bar__label {
   font-weight: bold;
-  font-size: 0.5rem;
+  font-size: 0.6rem;
   text-align: center;
+  margin-top: 0.5rem;
 }

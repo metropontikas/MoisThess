@@ -1,6 +1,21 @@
-import { useCallback, useEffect, useState } from "react";
-import Card from "../Card";
 import "./weather-card.scss";
+
+function getCardinalDirection(angle) {
+  const directions = [
+    "↑ N",
+    "↗ NE",
+    "→ E",
+    "↘ SE",
+    "↓ S",
+    "↙ SW",
+    "← W",
+    "↖ NW",
+  ];
+  return directions[Math.round(angle / 45) % 8];
+}
+function convertSpeed(data) {
+  return (3.6 * data).toFixed(2);
+}
 
 const WeatherCard = (props) => {
   const imgurl = `http://openweathermap.org/img/wn/${props.icon}.png`;
@@ -17,7 +32,7 @@ const WeatherCard = (props) => {
   );
 
   return (
-    <Card className="current-weather-card">
+    <>
       <div className="current-weather-card-info">
         <h1>Thessaloniki</h1>
         <p>
@@ -30,7 +45,7 @@ const WeatherCard = (props) => {
         </p>
       </div>
       <div className="current-weather-card-header">
-        <h2>Current Weather</h2>
+        <h2>{!props.isForecast ? "Current" : ""} Weather</h2>
         {!props.isForecast ? time : null}
       </div>
       <div className="current-weather-card-content ">
@@ -56,7 +71,7 @@ const WeatherCard = (props) => {
           </div>
           <div className="detail-item">
             <p>Wind Speed: </p>
-            <p>{props.wind_speed} km/h</p>
+            <p>{convertSpeed(props.wind_speed)} km/h</p>
           </div>
           <div className="detail-item">
             <p>Clouds Cover: </p>
@@ -70,11 +85,11 @@ const WeatherCard = (props) => {
           </div>
           <div className="detail-item">
             <p>Wind Direction: </p>
-            <p>{props.wind_deg}</p>
+            <p>{getCardinalDirection(props.wind_deg)}</p>
           </div>
         </div>
       </div>
-    </Card>
+    </>
   );
 };
 export default WeatherCard;

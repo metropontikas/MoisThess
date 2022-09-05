@@ -4,9 +4,9 @@
   }
   &-card {
     max-width: 50rem;
-    margin: auto;
-    padding: 2rem 3rem;
-    background: lavender;
+    margin: 1rem auto;
+    padding: 1rem 5rem;
+    background: #400d6f;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -19,7 +19,7 @@
       justify-content: space-between;
       h4 {
         align-self: flex-end;
-        color: #0000007d;
+        opacity: 0.7;
       }
     }
     &-info > * {
@@ -50,7 +50,7 @@
 .detail-item {
   display: flex;
   justify-content: space-between;
-  border-bottom: solid 1px #0000004a;
+  border-bottom: solid 1px #54ea2a;
   height: 2rem;
   margin-bottom: 0.5rem;
 }

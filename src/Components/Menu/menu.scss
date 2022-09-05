@@ -1,6 +1,5 @@
 .menu {
-  color: black;
-  background-color: white;
+  background: #400d6f;
   text-align: center;
   width: 100%;
   display: flex;
@@ -11,10 +10,12 @@
   width: 100%;
   font-size: 2rem;
   height: 50px;
+  box-shadow: 0px 0 5px 0px rgba(84, 234, 42, 0.5019607843);
 
   &__title {
     font-size: 2rem;
     cursor: pointer;
+    text-shadow: 0 1px 8px rgba(84, 234, 42, 0.72);
   }
 }
 .active {
