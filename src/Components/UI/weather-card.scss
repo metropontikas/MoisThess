@@ -1,18 +1,29 @@
+@import "../../mixins.scss";
+
 .current-weather {
+  flex: 45%;
+  text-align: left;
   p {
     text-transform: capitalize;
   }
   &-card {
     max-width: 50rem;
-    margin: 1rem auto;
+    margin: 1rem auto 5rem;
     padding: 1rem 5rem;
     background: #400d6f;
     display: flex;
     flex-direction: column;
     text-align: center;
+    @include atSmall {
+      margin: 1rem 1rem 5rem;
+      padding: 1rem 2rem;
+    }
     &-content {
       display: flex;
       justify-content: space-between;
+      @include atSmall {
+        flex-direction: column;
+      }
     }
     &-header {
       display: flex;
@@ -35,13 +46,23 @@
   &-extra {
     flex-basis: 45%;
     align-self: center;
+    @include atSmall {
+      align-self: unset;
+      margin-top: 1rem;
+    }
     div {
-      border: none;
+      border-bottom: none;
+      @include atSmall {
+        border-bottom: solid 1px #54ea2a;
+      }
     }
   }
   &-details {
     display: flex;
     justify-content: space-between;
+    @include atSmall {
+      flex-direction: column;
+    }
   }
   &-details > * {
     flex-basis: 45%;

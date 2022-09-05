@@ -5,9 +5,9 @@
 ~Create forecast chart
 ~Fetch data from openweatherAPI
 ~intepret wind direction and speed data
+~Add responsiveness
 
 to-do:
-~Add responsiveness
 
 1.1
 

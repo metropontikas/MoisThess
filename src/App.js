@@ -45,8 +45,6 @@ function App() {
           />
         )}
       </Card>
-      <Chart />
-
       <Menu />
     </>
   );

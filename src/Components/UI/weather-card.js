@@ -1,3 +1,4 @@
+import Chart from "./Chart/Chart";
 import "./weather-card.scss";
 
 function getCardinalDirection(angle) {
@@ -89,6 +90,7 @@ const WeatherCard = (props) => {
           </div>
         </div>
       </div>
+      <Chart />
     </>
   );
 };

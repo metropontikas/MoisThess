@@ -1,11 +1,17 @@
+@import "../../../mixins.scss";
+
 .chart {
   padding-top: 1rem;
   display: flex;
   justify-content: space-around;
-  height: 10rem;
+  @include atSmall {
+    flex-wrap: wrap;
+    & > * {
+      margin-bottom: 1rem;
+      flex: 45%;
+    }
+  }
   &-container {
-    max-width: 50rem;
-    margin: 0rem auto 4rem auto;
     background: #400d6f;
     text-align: center;
     padding: 1rem;
