@@ -1,3 +1,16 @@
+This project is a React.js-driven app for the weather reports of the city of Thessaloniki, Greece.
+
+it fetches its data from https://openweathermap.org/ and provides the current time weather report, as well as the forecast for the current day and the upcoming 7 ones.
+
+A chart is also implemented to display the maximum temperatures of the upcoming days.
+
+The project is built on React.js, using:
+-create-react-app for initialization,
+-Redux/toolkit for state management and data fetching,
+-SASS for more automated and nested styling.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
