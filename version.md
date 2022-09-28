@@ -1,3 +1,6 @@
+1.4
+~Change API key
+
 1.3
 ~change title
 ~Add conditinal rendering of "current" or "expected" weather in weather-card.js
