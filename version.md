@@ -1,3 +1,7 @@
+1.5
+~Invert arrows of wind direction
+~A bit of code cleaning
+
 1.4
 ~Change API key
 

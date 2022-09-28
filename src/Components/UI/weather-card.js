@@ -3,14 +3,14 @@ import "./weather-card.scss";
 
 function getCardinalDirection(angle) {
   const directions = [
-    "↑ N",
-    "↗ NE",
-    "→ E",
-    "↘ SE",
-    "↓ S",
-    "↙ SW",
-    "← W",
-    "↖ NW",
+    "↓ N",
+    "↙ NE",
+    "← E",
+    "↖ SE",
+    "↑ S",
+    "↗ SW",
+    "→ W",
+    "↘ NW",
   ];
   return directions[Math.round(angle / 45) % 8];
 }
@@ -52,7 +52,7 @@ const WeatherCard = (props) => {
       <div className="current-weather-card-content ">
         <div className="current-weather">
           <div className="current-weather-info">
-            <img src={imgurl} />
+            <img src={imgurl} alt="img" />
             <h1>{props.temp}°C</h1>
           </div>
           <p>{props.description}</p>

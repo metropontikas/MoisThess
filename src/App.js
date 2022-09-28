@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import WeatherCard from "./Components/UI/weather-card";
 import Menu from "./Components/Menu/Menu";
 import Card from "./Components/UI/Modals/Card";
-import Chart from "./Components/UI/Chart/Chart";
 import { getWeatherData } from "./Store/weatherSlice";
 import "./App.scss";
 
