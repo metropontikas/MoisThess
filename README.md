@@ -7,8 +7,11 @@ It fetches its data from https://openweathermap.org/ and provides the current ti
 A chart is also implemented to display the maximum temperatures of the upcoming days.
 
 The project is built on React.js, using:
+
 -create-react-app for initialization,
+
 -Redux/toolkit for state management and data fetching,
+
 -SASS for automated and nested styling.
 
 To install this app, in the project directory run:
